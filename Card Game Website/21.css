@@ -1,0 +1,62 @@
+.card
+{
+	width:15%;
+	margin:10px;
+}
+
+h2, .point
+{
+	font-size:50px;
+	color:white;
+	text-shadow:2px 2px black;
+}
+
+h1
+{
+	font-size:60px;
+	text-shadow:2px 2px white;
+}
+
+.button 
+{
+    background-color:#c97720;
+    border:none;
+    color:white;
+    padding:15px 32px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+	margin:10px 10px;
+	cursor:pointer;
+	font:bold 30px comic sans ms, sans-serif;
+}
+
+.button:hover
+{
+	background-color:white;
+	color:orange;
+}
+
+a
+{
+	padding:30px 50px;
+	background-color:#ffc082;
+	display:inline-block;
+	font-size:25px;
+	margin:10px;
+	color:black;
+}
+
+a:hover
+{
+	background-color:black;
+	color:white;
+}
+
+#winnerOut
+{
+	font-size:70px;
+	color:#fff5a8;
+	text-shadow:2px 2px black;
+	vertical-align:middle;
+}
