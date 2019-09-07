@@ -45,6 +45,13 @@ $(document).ready(function () {
 
         return false;
     });
+	
+	$('#myForm').on('submit', function(e) {
+            e.preventDefault(); // <-- important
+            $(this).ajaxSubmit({
+                target: '#output'
+            });
+    });
 
 
     // Menu opacity
