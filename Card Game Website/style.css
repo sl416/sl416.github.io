@@ -1,0 +1,63 @@
+.bgrnd
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	z-index:-1;
+	min-height:100%;
+}
+
+body
+{
+	text-align:center;
+	font:bold 20px arial;
+}
+
+.card
+{
+	height:150px;
+	margin:10px;
+}
+
+h2, .point
+{
+	font-size:40px;
+	color:white;
+	text-shadow:2px 2px black;
+}
+
+h1
+{
+	font-size:50px;
+	text-shadow:2px 2px white;
+}
+
+.button 
+{
+    background-color:#c97720;
+    border:none;
+    color:white;
+    padding:15px 32px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+	margin:10px 10px;
+	cursor:pointer;
+	font:bold 30px comic sans ms, sans-serif;
+}
+
+.button:hover
+{
+	background-color:white;
+	color:orange;
+}
+
+
+#winnerOut
+{
+	font-size:50px;
+	color:#fff5a8;
+	text-shadow:2px 2px black;
+	vertical-align:middle;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<!-- Sabrina Li -->
+<html>
+	<head>
+		<title>Card Game</title>
+		<link rel = "stylesheet" href = "style.css" />
+		<style></style>
+		<script src = "utilities.js"></script>
+		<script src = "card deck.js"></script>
+		<script>
+			function initialize()
+			{
+				rndDeck = shuffleDeck(generateStandardDeck());
+				playerCards = [];
+				compCards = [];
+				playerCards.push(rndDeck[0], rndDeck[1]);
+				compCards.push(rndDeck[2], rndDeck[3]);
+				deckIndex = 3;
+				winner = "";
+				compTurn = false;
+				determinePoints("p");
+				determinePoints("c");
+				display();
+			}
+			
+			function determinePoints(turn)
+			{
+				if (turn == "p")
+				{
+					playerPoints = 0;
+					
+					for (var i = 0; i < playerCards.length; i++)
+					{
+						if (playerCards[i].rank == 1)
+							playerPoints += 11;
+						else
+						{
+							if (playerCards[i].rank >= 11)
+								playerPoints += 10;
+							else
+								playerPoints += playerCards[i].rank;
+						}
+					}
+					
+					for (var i = 0; i < playerCards.length; i++)
+					{
+						if (playerCards[i].rank == 1)
+						{
+							if (playerPoints > 21)
+								playerPoints -= 10;
+						}
+					}
+				}
+				else
+				{
+					compPoints = 0;
+					
+					for (var i = 0; i < compCards.length; i++)
+					{
+						if (compCards[i].rank == 1)
+							compPoints += 11;
+						else
+						{
+							if (compCards[i].rank >= 11)
+								compPoints += 10;
+							else
+								compPoints += compCards[i].rank;
+						}
+					}
+					
+					for (var i = 0; i < compCards.length; i++)
+					{
+						if (compCards[i].rank == 1)
+						{
+							if (compPoints > 21)
+								compPoints -= 10;
+						}
+					}
+				}					
+			}
+			
+			function hit()
+			{
+				deckIndex++;
+				if (!compTurn)
+				{
+					playerCards.push(rndDeck[deckIndex]);
+					determinePoints("p");
+					var cardImage = document.createElement("img");
+					cardImage.src = "images/" + rndDeck[deckIndex].imgFile;
+					cardImage.style.height = "150px";
+					cardImage.style.margin = "10px";
+					document.getElementById("playerDiv").appendChild(cardImage);
+				}
+				else
+				{
+					while (compPoints < 17)
+					{
+						deckIndex++;
+						compCards.push(rndDeck[deckIndex]);
+						determinePoints("c");
+						var cardImage = document.createElement("img");
+						cardImage.src = "images/" + rndDeck[deckIndex].imgFile;
+						cardImage.style.height = "150px";
+						cardImage.style.margin = "10px";
+						document.getElementById("compDiv").appendChild(cardImage);
+					}
+				}
+				
+				determineWinner();
+			}
+			
+			function stay()
+			{
+				compTurn = true;
+				buttonDisplay();
+				
+				if (compPoints >= 17)
+					determineWinner();
+				else
+					hit();
+			}
+			
+			function buttonDisplay()
+			{
+				document.getElementById("hitOut").style.display = "none";
+				document.getElementById("stayOut").style.display = "none";
+			}
+			
+			function determineWinner()
+			{
+				if (playerPoints > 21)
+				{
+					winner = "You lose!";
+					compTurn = true;
+					buttonDisplay();
+				}
+				else
+				{
+					if (compTurn)
+					{
+						if (21 - playerPoints > 21 - compPoints)
+							winner = "You lose!";
+						else
+							winner = "You win!";
+						
+						if (playerPoints == compPoints)
+							winner = "Tie!";
+						
+						if (compPoints > 21)
+							winner = "You win!";
+					}
+				}
+					
+				display();
+			}
+			
+			function display()
+			{
+				document.getElementById(0).src = "images/" + playerCards[0].imgFile;
+				document.getElementById(1).src = "images/" + playerCards[1].imgFile;
+				document.getElementById(2).src = "images/" + compCards[0].imgFile;
+				
+				if (!compTurn)
+				{
+					document.getElementById(3).src = "images/0.png";
+					document.getElementById("compSum").innerHTML = compCards[0].rank + " + __";
+				}
+				else
+				{
+					document.getElementById(3).src = "images/" + compCards[1].imgFile;
+					document.getElementById("compSum").innerHTML = compPoints;
+				}
+				document.getElementById("winnerOut").innerHTML = winner;
+				document.getElementById("playerSum").innerHTML = playerPoints;
+			}
+		</script>
+	</head>
+	<body onload = "initialize();">
+		<img class = "bgrnd"  src = "images/bnd3.jpg"/>
+		<h1>Twenty One</h1>
+		<div id = "winnerOut"></div>
+		<div id = "playerDiv">
+			<h2>Player: </h2><span class = "point" id = "playerSum"></span>
+			<br />
+			<img class = "card" id = "0" src = ""/>
+			<img class = "card" id = "1" src = ""/>
+		</div>
+		<button class = "button" id = "hitOut" onclick = "hit();">Hit</button>
+		<button class = "button" id = "stayOut" onclick = "stay();">Stay</button>
+		<div id = "compDiv">
+			<h2>Computer: </h2><span class = "point" id = "compSum"></span>
+			<br />
+			<img class = "card" id = "2" src = ""/>
+			<img class = "card" id = "3" src = "images/0.png"/>
+			<span id = "3.5" src = ""/>
+		</div>
+	</body>
+</html>
