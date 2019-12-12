@@ -284,8 +284,8 @@ a.active {
 ==================================================*/
 
 #home {
-    /*background: url(../img/bgnd.png);*/
-	background-color:#ecc0ff;
+    background: url(../img/bgd.jpg);
+	/*background-color:#ecc0ff;*/
     background-size: cover;
     height: 100vh;
 }
@@ -315,7 +315,6 @@ a.active {
 .about-img-div img {
     margin: 0 auto;
 }
-
 
 /* awards section
 ==================================================*/
@@ -347,8 +346,7 @@ a.active {
 }
 
 .icon {
-	width:17%;
-	height:17%;
+	height:50px;
 }
 
 .intern {
