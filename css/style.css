@@ -4,7 +4,6 @@
 * website : www.ahmedessa.net
 */
 
-
 /* Table of Content
 ==================================================
 	- Google fonts & font family -
@@ -284,7 +283,7 @@ a.active {
 ==================================================*/
 
 #home {
-	background-color:#ecc0ff;
+    background-color:#ecc0ff;
     background-size: cover;
     height: 100vh;
 }
