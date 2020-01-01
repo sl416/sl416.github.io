@@ -1,35 +1,19 @@
-.bgrnd
-{
-	position:fixed;
-	top:0px;
-	left:0px;
-	width:100%;
-	z-index:-1;
-	min-height:100%;
-}
-
-body
-{
-	text-align:center;
-	font:bold 20px arial;
-}
-
 .card
 {
-	height:150px;
+	width:15%;
 	margin:10px;
 }
 
 h2, .point
 {
-	font-size:40px;
+	font-size:50px;
 	color:white;
 	text-shadow:2px 2px black;
 }
 
 h1
 {
-	font-size:50px;
+	font-size:60px;
 	text-shadow:2px 2px white;
 }
 
@@ -44,7 +28,7 @@ h1
     display:inline-block;
 	margin:10px 10px;
 	cursor:pointer;
-	font:bold 30px arial;
+	font:bold 30px comic sans ms, sans-serif;
 }
 
 .button:hover
@@ -53,10 +37,25 @@ h1
 	color:orange;
 }
 
+a
+{
+	padding:30px 50px;
+	background-color:#ffc082;
+	display:inline-block;
+	font-size:25px;
+	margin:10px;
+	color:black;
+}
+
+a:hover
+{
+	background-color:black;
+	color:white;
+}
 
 #winnerOut
 {
-	font-size:50px;
+	font-size:70px;
 	color:#fff5a8;
 	text-shadow:2px 2px black;
 	vertical-align:middle;

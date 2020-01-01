@@ -1,0 +1,52 @@
+a
+{
+	padding:30px 50px;
+	background-color:blue;
+	display:inline-block;
+	font-size:25px;
+	margin:10px;
+}
+
+a:hover
+{
+	background-color:black;
+}
+
+div
+{
+	width:70vw;
+	height:80vh;
+	display:inline-block;
+	padding:10px 10px;
+	text-shadow:2px 2px black;
+}
+
+h1
+{
+	color:#c6ecff;
+	font-size:60px;
+}
+
+h2
+{
+	color:#91ffdc;
+	font-size:50px;
+}
+
+h3
+{
+	color:#54d9ff;
+	font-size:40px;
+}
+
+h4
+{
+	color:white;
+	font-size:30px;
+	line-height:1.6;
+}
+
+.bgrnd
+{
+	filter:brightness(60%);
+}

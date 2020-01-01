@@ -39,16 +39,22 @@
     
     <!-- header -->
     <header class="navbar-fixed-top">
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-			
+        <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+			<div class="container">   
+				<a href="#home" class="navbar-brand">Sabrina</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<img src = "img/bars.png" class="navbar-toggler-icon"/>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link tm-nav-link" href="#about">About</a></li>
+						<li class="nav-item"><a class="nav-link tm-nav-link" href="#awards">Awards</a></li>
+						<li class="nav-item"><a class="nav-link tm-nav-link" href="#experience">Experience</a></li>
+						<li class="nav-item"><a class="nav-link tm-nav-link" href="#projects">Projects</a></li>
+						<li class="nav-item"><a class="nav-link tm-nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
         </nav>
     </header>
     <!-- ./header -->
@@ -76,7 +82,7 @@
             </div>
 			<br />
             <div class="col-md-6 about-img-div">
-                <img src="img/about-img.png" width="500" class="img-responsive" alt="" align="right" data-aos="fade-right" data-aos-delay="0" />
+                <img src="img/about-img2.png" width="500" class="img-responsive" alt="" align="right" data-aos="fade-right" data-aos-delay="0" />
             </div>
         </div>
     </div>
@@ -91,7 +97,7 @@
             </div>
 			<div data-aos="fade-up">
 				<!-- single work -->
-				<div class="col-md-4 col-sm-6  fashion logo">
+				<div class="col-md-4 col-sm-6">
 					<a href="https://sway.office.com/HsP2ToIBwjeVbcXG?ref=Link" target = "_blank" rel = "noopener" class="portfolio_item"> <img src="img/cs fair.jpg" alt="image" class="img-responsive" />
 						<div class="portfolio_item_hover">
 							<div class="portfolio-border clearfix">
@@ -103,7 +109,7 @@
 				<!-- end single work -->
 				
 				<!-- single work -->
-				<div class="col-md-4 col-sm-6 ads graphics">
+				<div class="col-md-4 col-sm-6">
 					<a id="demo01" href="#ncwitModal" class="portfolio_item"> <img src="img/ncwit.jpg" alt="image" class="img-responsive" />
 						<div class="portfolio_item_hover">
 							<div class="portfolio-border clearfix">
@@ -182,136 +188,48 @@
         <div class="container">
             <div class="col-md-12">
                 <h1 class="size-50">Projects</h1> 
+				<div class="h-50"></div>
             </div>
-            <!-- main container -->
-            <div class="main-container portfolio-inner clearfix">
-                <!-- portfolio div -->
-                <div class="portfolio-div">
-                    <div class="portfolio">
-                        <!-- portfolio_filter -->
-                        <div class="categories-grid wow fadeInLeft">
-                            <nav class="categories">
-                                <ul class="portfolio_filter">
-                                    <li class = "boop"><a href="" class="active" data-filter="*">All</a></li>
-                                    <li class = "boop"><a href="" data-filter=".photography">Photography</a></li>
-                                    <li class = "boop"><a href="" data-filter=".logo">Logo</a></li>
-                                    <li class = "boop"><a href="" data-filter=".graphics">Graphics</a></li>
-                                    <li class = "boop"><a href="" data-filter=".ads">Advertising</a></li>
-                                    <li class = "boop"><a href="" data-filter=".fashion">Fashion</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- portfolio_filter -->
-                        
-                        <!-- portfolio_container -->
-                        <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
-                            <!-- single work -->
-                            <div class="col-md-4 col-sm-6">
-                                <a id="demo03" href="#sleepModal" class="portfolio_item"> <img src="img/sleep.jpg" alt="image" class="img-responsive" />
-                                    <div class="portfolio_item_hover">
-                                        <div class="portfolio-border clearfix">
-                                            <div class="item_info"> <span>Sleep</span> <em>Web Application</em> </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- end single work -->
-                            
-                            <!-- single work -->
-							<div class="col-md-4 col-sm-6">
-								<a href="21/index.html" target = "_blank" rel = "noopener" class="portfolio_item"> <img src="img/cards.jpg" alt="image" class="img-responsive" />
-									<div class="portfolio_item_hover">
-										<div class="portfolio-border clearfix">
-											<div class="item_info"> <span>Twenty One</span> <em>Card Game</em> </div>
-										</div>
-									</div>
-								</a>
+			<div data-aos="fade-up">
+				<!-- single work -->
+				<div class="col-md-4 col-sm-6">
+					<a href="https://auto-scan.github.io" target = "_blank" rel = "noopener" class="portfolio_item"> <img src="img/AutoScan.jpg" alt="image" class="img-responsive" />
+						<div class="portfolio_item_hover">
+							<div class="portfolio-border clearfix">
+								<div class="item_info"> <span>AutoScan</span> <em>Page Turning Scanner</em> </div>
 							</div>
-							<!-- end single work -->
-                        </div>
-                        <!-- end portfolio_container -->
-                    </div>
-                    <!-- portfolio -->
-                </div>
-                <!-- end portfolio div -->
+						</div>
+					</a>
+				</div>
+				<!-- end single work -->
+				
+				<!-- single work -->
+				<div class="col-md-4 col-sm-6">
+					<a id="demo03" href="#sleepModal" class="portfolio_item"> <img src="img/sleep.jpg" alt="image" class="img-responsive" />
+						<div class="portfolio_item_hover">
+							<div class="portfolio-border clearfix">
+								<div class="item_info"> <span>Sleep</span> <em>Web Application</em> </div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- end single work -->
+				
+				<!-- single work -->
+				<div class="col-md-4 col-sm-6">
+					<a href="21/index.html" target = "_blank" rel = "noopener" class="portfolio_item"> <img src="img/cards.jpg" alt="image" class="img-responsive" />
+						<div class="portfolio_item_hover">
+							<div class="portfolio-border clearfix">
+								<div class="item_info"> <span>Twenty One</span> <em>Card Game</em> </div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- end single work -->
             </div>
-            <!-- end main container -->
         </div>
     </div>
     <!-- ./projects -->
-	
-	
-    <!-- events -->
-	<div class="section" id="events">
-        <div class="container">
-            <div class="col-md-12">
-                <h1 class="size-50">Events Attended</h1>
-                <div class="h-50"></div>
-				<div data-aos="fade-up">
-					<!-- single work -->
-					<div class="col-md-4 col-sm-6">
-						<a class="portfolio_item"> <img src="img/aws.jpg" alt="image" class="img-responsive" />
-							<div class="portfolio_item_hover">
-								<div class="portfolio-border clearfix">
-									<div class="item_info"><span>Amazon Web Services Artificial Intelligence/Machine Learning Bootcamp</span><em>August 2019</em></div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- end single work -->
-					
-					<!-- single work -->
-					<div class="col-md-4 col-sm-6">
-						<a class="portfolio_item"> <img src="img/fb.jpg" alt="image" class="img-responsive" />
-							<div class="portfolio_item_hover">
-								<div class="portfolio-border clearfix">
-									<div class="item_info"> <span>Facebook High School Preview Day</span><em>July 2019</em></div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- end single work -->
-
-					<!-- single work -->
-					<div class="col-md-4 col-sm-6">
-						<a class="portfolio_item"> <img src="img/cyber.jpg" alt="image" class="img-responsive" />
-							<div class="portfolio_item_hover">
-								<div class="portfolio-border clearfix">
-									<div class="item_info"> <span>New York Cybersecurity Converge Tour with The Blackstone Group and Security Advisor Alliance</span><em>April 2019</em></div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- end single work -->
-
-					<!-- single work -->
-					<div class="col-md-4 col-sm-6">
-						<a class="portfolio_item"> <img src="img/nyu.jpg" alt="image" class="img-responsive" />
-							<div class="portfolio_item_hover">
-								<div class="portfolio-border clearfix">
-									<div class="item_info"> <span>Mock Interview and Resume Review with LinkedIn and New York University</span><em>January 2019</em></div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- end single work -->
-
-					<!-- single work -->
-					<div class="col-md-4 col-sm-6">
-						<a class="portfolio_item"> <img src="img/bny.jpg" alt="image" class="img-responsive" />
-							<div class="portfolio_item_hover">
-								<div class="portfolio-border clearfix">
-									<div class="item_info"> <span>The Bank of New York (BNY) Mellon Information Technology Career Event</span><em>November 2017</em></div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- end single work -->
-				</div>
-			</div>
-        </div>
-    </div>
-    <!-- ./events -->
 	
     <!-- contact -->
     <div class="section" id="contact">
@@ -327,7 +245,7 @@
                 <h3>Email</h3> 
                 <p>sabrinali0414@gmail.com </p>
 				<h3>LinkedIn</h3>
-				<p><a href="https://www.linkedin.com/in/sabrinali0414" target = "_blank" rel = "noopener">https://www.linkedin.com/in/sabrinali0414</a></p>
+				<p><a href="https://www.linkedin.com/in/sabrinali0414" target = "_blank" rel = "noopener">Click to View</a></p>
 				<h3>Resume</h3>
 				<p><a href = "Sabrina_Li_Resume.pdf" target = "_blank" rel = "noopener">Click to View</a></p>
 				<!--
@@ -359,9 +277,15 @@
                 </form>
             </div>
         </div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
     </div>
     <!-- ./contact -->
-	<br />
 
     <!--DEMO01-->
     <div id="ncwitModal" class="popup-modal">
@@ -439,7 +363,7 @@
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!--  plugins  -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/jquery.form.js"></script>
