@@ -72,7 +72,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 24px;
-	width:100vw;
+	width:98vw;
 }
 
 .size-50 {
@@ -1449,10 +1449,6 @@ fieldset {
 		margin-right:0px;
 	}
 	
-	nav li a, .navbar-brand {
-		font-size:20px;
-	}
-	
 }
 
 /*
@@ -1460,5 +1456,4 @@ fieldset {
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
-}
-*/
+}*/
